@@ -47,15 +47,7 @@ function App() {
       </div>
       <InputBox setHandleMoneyChange={updateHandleMoneyChange}/>
 
-      <div className="flex flex-col h-4/6 w-6/12 min-w-80 mt-5">
-        <div className="flex flex-row w-full justify-between items-center">
-          <h2 className="sm:text-xl text-xs mt-2 text-amber-200">รายการ</h2>
-          <div className="flex flex-row gap-2 sm:min-w-60 w-40 justify-between">
-            <h2 className="sm:text-xl text-xs mt-2 text-amber-200">ราคา</h2>
-            <h2 className="sm:text-xl text-xs mt-2 text-amber-200">จำนวน</h2>
-            <h2 className="sm:text-xl text-xs mt-2 text-amber-200">ราคา/คน</h2>
-          </div>
-        </div>
+      <div className="flex flex-col h-4/6 w-6/12 min-w-80 mt-5 rounded-xl overflow-y-auto">
         <DisplayList handleMoneyChange={handleMoneyChange} deleteHandleMoneyChange={deleteHandleMoneyChange}/>
       </div>
     </div>
